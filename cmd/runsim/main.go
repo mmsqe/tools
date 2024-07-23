@@ -50,6 +50,7 @@ var (
 	// log stuff
 	runsimLogFile *os.File
 	timeout       time.Duration
+	tags          string
 )
 
 type Seed struct {
@@ -312,9 +313,13 @@ func checkSignal(proc *os.Process, signal syscall.Signal) {
 }
 
 func buildCmdString(testName, blocks, period, genesis, exportStatePath, exportParamsPath string, seed int) string {
-	return fmt.Sprintf("go test %s -run %s -Enabled=true -NumBlocks=%s -Genesis=%s -Verbose=true "+
+	cmd := fmt.Sprintf("go test %s -run %s -Enabled=true -NumBlocks=%s -Genesis=%s -Verbose=true "+
 		"-Commit=true -Seed=%d -Period=%s -ExportParamsPath %s -ExportStatePath %s -v -timeout %s",
 		pkgName, testName, blocks, genesis, seed, period, exportParamsPath, exportStatePath, timeout)
+	if tags != "" {
+		cmd += fmt.Sprintf(" -tags %s", tags)
+	}
+	return cmd
 }
 
 func execCmd(cmdStr string) *exec.Cmd {

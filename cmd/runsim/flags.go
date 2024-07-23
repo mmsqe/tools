@@ -28,6 +28,7 @@ func initFlags() {
 	flag.BoolVar(&exitOnFail, "ExitOnFail", false, "exit on fail during multi-sim, print error")
 	flag.IntVar(&jobs, "Jobs", jobs, "number of parallel processes")
 	flag.DurationVar(&timeout, "Timeout", defaultTimeout, "simulations fail if they run longer than the supplied timeout")
+	flag.StringVar(&tags, "Tags", "", "specify build tags to include packages")
 
 	flag.Usage = func() {
 		_, _ = fmt.Fprintf(flag.CommandLine.Output(),
