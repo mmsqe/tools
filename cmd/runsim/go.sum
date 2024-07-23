@@ -8,7 +8,6 @@ github.com/cosmos/tools/lib/runsimgh v1.0.0 h1:MoVUp+MT13EHYuNhDpcmnKbYsn9dCAvA6
 github.com/cosmos/tools/lib/runsimgh v1.0.0/go.mod h1:Th32ntR4b9UB7g1MoqmXqZmcbBz01xBjISxRJJpnv1c=
 github.com/cosmos/tools/lib/runsimslack v1.0.0 h1:sD6Jw/ezjCNjjk9x0uNotrwyfU0NmojPoLBmadwQgbo=
 github.com/cosmos/tools/lib/runsimslack v1.0.0/go.mod h1:y2LWmXsI9mkxa1P6B945Wm2eifbXlDSEzKc2OU3Yqps=
-github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
